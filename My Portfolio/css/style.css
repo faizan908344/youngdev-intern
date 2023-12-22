@@ -1,0 +1,1317 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* Cambria Font Face */
+@font-face {
+  font-family: 'Cambria';
+  src: url('Cambria.woff2') format('woff2'),
+      url('Cambria.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* My CSS Styling Start from here */
+
+#homepage{
+  background-color: rgb(236, 23, 48);
+  padding-top: 10px;
+}
+#homepage .container-fluid{
+  margin: 0px 50px;
+}
+#homepage .container-fluid .row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#homepage .nav-logo .heading{
+  display: flex;
+}
+#homepage .nav-logo .heading a{
+  font-size: 30px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: white;
+  padding: 10px 0px;
+  text-decoration: none;
+}
+#homepage .nav-links{
+  padding: 10px 0px;
+}
+#homepage .nav-links .links{
+  display: flex;
+  justify-content: end;
+}
+#homepage .nav-links ul{
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  width: 45%;
+}
+#homepage .nav-links ul li{
+  list-style: none;
+}
+#homepage .nav-links ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Cambria";
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+#homepage .nav-links ul li a::before{
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 3px;
+  background-color: white;
+  bottom: 9px;
+  transition: .7s;
+}
+#homepage .nav-links ul li a:hover::before{
+  width: 58px;
+}
+
+#homepage .links-content{
+  display: flex;
+}
+#homepage .profile-img{
+  padding: 0px;
+}
+#homepage .profile-img img{
+  width: 100%;
+}
+#homepage .links-content .content{
+  margin: auto;
+}
+#homepage .links-content .content .sub-heading h3{
+  margin: 0px;
+  font-size: 27px;
+  font-family: "Cambria";
+  font-weight: 600;
+  padding: 5px;
+  color: white;
+}
+#homepage .links-content .content .heading h2{
+  margin: 0px;
+  font-size: 60px;
+  font-family: "Cambria";
+  font-weight: 600;
+  padding: 5px;
+  color: goldenrod;
+}
+#homepage .links-content .content .desc p{
+  margin: 0px;
+  font-size: 20px;
+  font-family: "Cambria";
+  font-weight: 400;
+  padding: 10px 5px;
+  color: white;
+  max-width: 80%;
+}
+#homepage .links-content .content .button{
+  display: flex;
+  padding: 10px 5px;
+  margin-top: 30px;
+}
+#homepage .links-content .content .button a{
+  padding: 12px 0px;
+  border: 1px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: white;
+  width: 40%;
+  text-align: center;
+  transition: .7s;
+}
+#homepage .links-content .content .button a:hover{
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+}
+#homepage .links-content .content .social-icons{
+  padding: 0px 5px;
+  margin: 5px 0px;
+}
+#homepage .links-content .content .social-icons a{
+  margin: 0px;
+  margin-right: 7px;
+  padding: 0px;
+}
+#homepage .links-content .content .social-icons .fa-facebook{
+  color: white;
+  font-size: 25px;
+  border: 1px solid #4267B2;
+  padding: 7px 12px;
+  border-radius: 5px;
+  background-color: #4267B2;
+}
+#homepage .links-content .content .social-icons .fa-whatsapp{
+  color: white;
+  font-size: 25px;
+  border: 1px solid #25D366;
+  padding: 7px 8px;
+  border-radius: 5px;
+  background-color: #25D366;
+}
+#homepage .links-content .content .social-icons .fa-linkedin{
+  color: white;
+  font-size: 25px;
+  border: 1px solid #0077b5;
+  padding: 7px 8px;
+  border-radius: 5px;
+  background-color: #0077b5;
+}
+#homepage .links-content .content .social-icons .fa-github{
+  color: white;
+  font-size: 25px;
+  border: 1px solid #2b3137;
+  padding: 7px 8px;
+  border-radius: 5px;
+  background-color: #2b3137;
+}
+
+/* About Us Section */
+#about-us{
+  padding: 50px 0px;
+}
+#about-us .container-fluid{
+  margin: 0px 50px;
+}
+#about-us .about-head{
+  margin-bottom: 50px;
+}
+#about-us .about-head .heading h2{
+  margin: 0px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: black;
+  padding: 12px 0px;
+}
+#about-us .about-head .heading h2 span{
+  color: goldenrod;
+}
+#about-us .picture{
+  margin: 0px;
+}
+#about-us .picture .profile .image{
+  border: 1px solid red;
+  margin: 5px;
+  height: 80vh;
+  border: 5px solid rgb(236, 23, 48);
+  border-radius: 10px;
+  background: url("../img/new-pic.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#about-us .about-info{
+  margin: 0px;
+}
+#about-us .about-info .my-info{
+  height: 80vh;
+  margin: 0px;
+}
+
+/* Tab Links */
+#about-us .about-info .my-info .tab-bar{
+  padding: 10px 0px;
+}
+#about-us .about-info .my-info .tab-bar ul{
+  margin: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  width: 75%;
+}
+#about-us .about-info .my-info .tab-bar ul li{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: black;
+  background-color: transparent;
+}
+#about-us .about-info .my-info .tab-bar ul li::before{
+  content: "";
+  background-color: black;
+  width: 0px;
+  height: 3px;
+  position: absolute;
+  top: 35px;
+  transition: .7s;
+}
+#about-us .about-info .my-info .tab-bar ul li:hover::before{
+  width: 100px;
+}
+
+/* Style tab links */
+.tabcontent{
+  color: black;
+  display: none;
+  padding: 15px 5px;
+}
+
+#edu {
+  margin: 0px;
+}
+#edu .graduation{
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 7px 0px;
+}
+#edu .graduation .institute-name{
+  display: inline-block;
+  width: 70%;
+}
+#edu .graduation .institute-name h2{
+  font-size: 22px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: black;
+  margin: 0px;
+  padding: 20px 5px;
+}
+#edu .graduation .duration{
+  display: inline-block;
+  width: 30%;
+}
+#edu .graduation .duration p{
+  margin: 0px;
+  font-size: 20px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: black;
+  padding: 15px 5px;
+  text-align: end;
+}
+#edu .graduation .degree-name{
+  display: block;
+  width: 100%;
+}
+#edu .graduation .degree-name p{
+  margin: 0px;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 500;
+  color: black;
+  padding: 5px;
+}
+#edu .graduation .grade{
+  display: block;
+  width: 100%;
+}
+#edu .graduation .grade p{
+  margin: 0px;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 500;
+  color: black;
+  padding: 5px;
+}
+#edu .horizontal-line,
+#exp .horizontal-line{
+  display: flex;
+  justify-content: center;
+}
+#edu .horizontal-line hr,
+#exp .horizontal-line hr{
+  font-weight: 400;
+  background-color: black;
+  border: none;
+  width: 85%;
+}
+
+#exp {
+  margin: 0px;
+}
+#exp .my-experience{
+  padding: 5px;
+  margin: 7px 0px;
+}
+#exp .my-experience .institute-name h2{
+  margin: 0px;
+  font-size: 22px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: black;
+  padding: 15px 5px;
+}
+#exp .my-experience .position p{
+  margin: 0px;
+  padding: 3px 5px;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 400;
+  color: black;
+}
+#exp .my-experience .duration p{
+  margin: 0px;
+  padding: 3px 5px;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 400;
+  color: black;
+}
+
+#skill{
+  margin: 0px;
+}
+#skill .my-skills{
+  /* border: 1px solid black; */
+  padding: 5px;
+  margin: 20px 0px;
+}
+#skill .my-skills .skillname p{
+  margin: 0px;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 400;
+  color: black;
+  padding: 5px 0px;
+}
+#skill .my-skills .skillprogress{
+  border: 1px solid grey;
+  width: 100%;
+  background-color: #e7e6e6;
+  border-radius: 3px;
+}
+#skill .my-skills .skillprogress .flutter{
+  background-color: rgb(236, 23, 48);
+  height: 13px;
+  width: 70%;
+  border-radius: 3px;
+}
+#skill .my-skills .skillprogress .ui-design{
+  background-color: rgb(236, 23, 48);
+  height: 13px;
+  width: 60%;
+  border-radius: 3px;
+}
+#skill .my-skills .skillprogress .backend{
+  background-color: rgb(236, 23, 48);
+  height: 13px;
+  width: 30%;
+  border-radius: 3px;
+}
+#skill .my-skills .skillprogress .frontend{
+  background-color: rgb(236, 23, 48);
+  height: 13px;
+  width: 85%;
+  border-radius: 3px;
+}
+#skill .my-skills .skillprogress .graphic{
+  background-color: rgb(236, 23, 48);
+  height: 13px;
+  width: 70%;
+  border-radius: 3px;
+}
+
+#lang{
+  margin: 0px;
+}
+#lang .my-lang{
+  padding: 5px;
+  margin: 20px 0px;
+}
+#lang .my-lang .langname p{
+  margin: 0px;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 400;
+  color: black;
+  padding: 5px 0px;
+}
+#lang .my-lang .langprogress{
+  border: 1px solid grey;
+  width: 100%;
+  background-color: #e7e6e6;
+  border-radius: 3px;
+}
+#lang .my-lang .langprogress .dart{
+  background-color: rgb(236, 23, 48);
+  height: 13px;
+  width: 50%;
+  border-radius: 3px;
+}
+#lang .my-lang .langprogress .html{
+  background-color: rgb(236, 23, 48);
+  height: 13px;
+  width: 85%;
+  border-radius: 3px;
+}
+#lang .my-lang .langprogress .css{
+  background-color: rgb(236, 23, 48);
+  height: 13px;
+  width: 85%;
+  border-radius: 3px;
+}
+#lang .my-lang .langprogress .bootstrap{
+  background-color: rgb(236, 23, 48);
+  height: 13px;
+  width: 80%;
+  border-radius: 3px;
+}
+#lang .my-lang .langprogress .python{
+  background-color: rgb(236, 23, 48);
+  height: 13px;
+  width: 50%;
+  border-radius: 3px;
+}
+#lang .my-lang .langprogress .js{
+  background-color: rgb(236, 23, 48);
+  height: 13px;
+  width: 40%;
+  border-radius: 3px;
+}
+
+/* Contact Form Information */
+#contact-form{
+  /* background-color: #1200b2; */
+  /* background-color: #0000FF; */
+  padding: 60px 0px;
+  /* background-color: rgb(236, 23, 48); */
+  background-color: #e6e6e6;;
+}
+#contact-form .row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#contact-form .contact-head{
+  margin: 0px 0px 30px 0px;
+}
+#contact-form .contact-head .heading h2{
+  margin: 0px;
+  font-size: 45px;
+  padding: 10px 0px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
+#contact-form .contact-head .heading h2 span{
+  color: goldenrod;
+}
+#contact-form .contact-form{
+  margin: 0px;
+}
+#contact-form .contact-form form{
+  margin: 30px 0px;
+}
+#contact-form .contact-form form input{
+  width: 100%;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #8a8a8a;
+  color: black;
+}
+#contact-form .contact-form textarea{
+  width: 100%;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 400;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #8a8a8a;
+}
+#contact-form .contact-form .button{
+  /* border: 1px solid white; */
+  margin: 5px 0px 10px 0px;
+}
+#contact-form .contact-form .button a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: #8a8a8a;
+  max-width: 50%;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  border-radius: 30px;
+  border: 1px solid #8a8a8a;
+  transition: .7s;
+}
+#contact-form .contact-form .button a:hover{
+  background-color: #000;
+  color: white;
+  border: 1px solid black;
+}
+
+/* Projects Section */
+#my-projects{
+  /* background-color: #10aa10; */
+  /* background-color: #0077b5; */
+  /* background-color: #4D4DFF; */
+  padding: 50px 0px;
+  /* background-color: #e6e6e6; */
+}
+#my-projects .container-fluid{
+  margin: 0px 50px;
+}  
+#my-projects .row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+#my-projects .project-head{
+  margin-bottom: 100px;
+}
+#my-projects .project-head .heading h2{
+  margin: 0px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: black;
+  padding: 20px 0px;
+}
+#my-projects .project-head .heading h2 span{
+  color: goldenrod;
+}
+#my-projects .my-services{
+  border: 3px solid rgb(236, 23, 48);
+  border-radius: 15px;
+  margin: 0px 40px;
+  transition: .7s;
+}
+#my-projects .my-services:hover{
+  transform: scale(1.1);
+}
+#my-projects .my-services .services{
+  padding: 50px 10px;
+  margin: 5px;
+  transition: .7s;
+}
+#my-projects .web-dev{
+  background: url('../img/services/web-development.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#my-projects .app-dev{
+  background: url('../img/services/app-development.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#my-projects .graphic{
+  background: url('../img/services/graphic-designing.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#my-projects .my-services::before{
+  position: absolute;
+  content: "";
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border-radius: 15px;
+  opacity: .5;
+  z-index: 9;
+}
+#my-projects .my-services .services .heading{
+  margin: 0px;
+  margin: 10px 0px;
+}
+#my-projects .my-services .services .heading h2{
+  font-size: 35px;
+  font-family: "Cambria";
+  text-align: center;
+  margin: 0px;
+  padding: 15px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  z-index: 9;
+}
+#my-projects .my-services .services .desc{
+  display: flex;
+  justify-content: center;
+}
+#my-projects .my-services .services .desc p{
+  margin: 0px;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+  position: relative;
+  z-index: 9;
+}
+#my-projects .my-services .services .button{
+  margin-top: 10px;
+  padding: 5px;
+}
+#my-projects .my-services .services .button a{
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: 0px auto;
+  padding: 10px 0px;
+  border-radius: 30px;
+  transition: .7s;
+  position: relative;
+  z-index: 9;
+}
+#my-projects .my-services .services .button a:hover{
+  background-color: #000;
+  color: white;
+  border: 1px solid black;
+}
+
+/* Footer Section */
+footer{
+  background-color: rgb(236, 23, 48);
+}
+footer .copy-restrict p{
+  margin: 0px;
+  padding: 15px 0px;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 400;
+  color: white;
+}
+
+/* Graphic Designing Page */
+nav{
+  padding: 10px 0px;
+  background-color: rgb(236, 23, 48);
+}
+nav .nav-logo .logo{
+  margin: 0px;
+}
+nav .nav-logo .logo a{
+  font-size: 30px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  margin: 0px;
+}
+
+
+#graphic-head{
+  margin: 35px 0px 50px 0px;
+}
+#graphic-head .heading{
+  margin: 0px;
+}
+#graphic-head .heading h2{
+  margin: 0px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Cambria";
+  font-weight: 600;
+  padding: 10px 0px;
+  color: black;
+  letter-spacing: 5px;
+}
+#graphic-head .heading h2 span{
+  color: goldenrod;
+}
+
+#adobe-illustrator,
+#adobe-photoshop,
+#adobe-xd{
+  margin-bottom: 100px;
+}
+#adobe-illustrator .illustrator,
+#adobe-photoshop .photoshop,
+#adobe-xd .ui-design{
+  margin-bottom: 20px;
+}
+#adobe-illustrator .illustrator .heading h3,
+#adobe-photoshop .photoshop .heading h3,
+#adobe-xd .ui-design .heading h3{
+  margin: 0px;
+  font-size: 23px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: black;
+  padding: 5px;
+  text-decoration: underline;
+}
+#adobe-illustrator .adobe-item,
+#adobe-photoshop .adobe-item,
+#adobe-xd .adobe-item{
+  margin-bottom: 20px;
+}
+#adobe-illustrator .adobe-item .item,
+#adobe-photoshop .adobe-item .item,
+#adobe-xd .adobe-item .item{
+  border: 1px solid black;
+  background-color: rgb(222, 221, 221);
+  height: 35vh;
+  border-radius: 10px;
+}
+#adobe-illustrator .adobe-item .profile img,
+#adobe-photoshop .adobe-item .bike img,
+#adobe-xd .adobe-item .voting-design img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#adobe-illustrator .adobe-item .independence img,
+#adobe-photoshop .adobe-item .shampoo img,
+#adobe-xd .adobe-item .lws-design img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#adobe-illustrator .adobe-item .logo img,
+#adobe-photoshop .adobe-item .tractor img,
+#adobe-xd .adobe-item .shopping-design img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#adobe-illustrator .adobe-item .broucher img,
+#adobe-photoshop .adobe-item .building img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#adobe-illustrator .adobe-item .design img{
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 0px 60px;
+}
+#adobe-illustrator .adobe-item .flyer img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#adobe-illustrator .adobe-item .dice img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Web Development */
+#web-head{
+  margin: 50px 0px;
+}
+#web-head .heading h2{
+  margin: 0px;
+  font-size: 40px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 10px 0px;
+}
+#web-head .heading h2 span{
+  color: goldenrod;
+}
+#web-development{
+  margin: 10px 0px;
+}
+#web-development .container-fluid{
+  margin: 0px 40px;
+}
+#web-development .row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#web-development .web-item{
+  border: 4px solid rgb(236, 23, 48);
+  padding: 0px;
+  height: 60vh;
+  width: 30%;
+  margin: 0px 20px 30px 20px;
+  border-radius: 10px;
+}
+#web-development .voting{
+  background: url("../img/web-development/voting.PNG");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+#web-development .shopping{
+  background: url("../img/web-development/shopping.PNG");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+#web-development .global{
+  background: url("../img/web-development/global-solution.PNG");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+#web-development .default-page{
+  background: url("../img/web-development/default-page.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#web-development .autoparts{
+  background: url("../img/web-development/autoparts.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#web-development .landing-page{
+  background: url("../img/web-development/landing-page.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#web-development .screening{
+  background: url("../img/web-development/screening-website.PNG");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+}
+#web-development .injury{
+  background: url("../img/web-development/injury-treatment.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#web-development .web-item .item{
+  border: 1px solid black;
+  height: 0vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.6), rgb(236, 23, 48));
+  position: absolute;
+  bottom: 0px;
+  transition: .7s;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#web-development .web-item:hover .item{
+  height: 100%;
+}
+
+#web-development .item .heading{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+#web-development .item .desc{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+#web-development .item .button{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+#web-development .item .heading h2{
+  margin: 0px;
+  font-size: 35px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+#web-development .item .desc p{
+  margin: 0px;
+  font-size: 20px;
+  font-family: "Cambria";
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  max-width: 80%;
+}
+#web-development .item .button a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: white;
+  padding: 10px 0px;
+  border: 1px solid white;
+  border-radius: 40px;
+  width: 50%;
+  text-align: center;
+  transition: .7s;
+}
+#web-development .item .button a:hover{
+  background-color: black;
+  border: 1px solid black;
+}
+
+/* App Development Section*/
+#app-development{
+  margin: 30px 0px;
+}
+#app-development .container-fluid{
+  margin: 0px 50px;
+}
+#app-development .app-item{
+  border: 4px solid rgb(236, 23, 48);
+  padding: 0px;
+  height: 60vh;
+  width: 30%;
+  margin: 0px 20px 0px 20px;
+  border-radius: 10px;
+}
+#app-development .login{
+  background: url("../img/app-development/login-page.PNG");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+#app-development .ecom-app{
+  background: url("../img/app-development/e-com-app.PNG");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+#app-development .calculator{
+  background: url("../img/app-development/calculator-app.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#app-development .item .heading{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+#app-development .item .desc{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+#app-development .item .button{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+#app-development .item .heading h2{
+  margin: 0px;
+  font-size: 35px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+#app-development .item .desc p{
+  margin: 0px;
+  font-size: 20px;
+  font-family: "Cambria";
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  max-width: 80%;
+}
+#app-development .item .button a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Cambria";
+  font-weight: 600;
+  color: white;
+  padding: 10px 0px;
+  border: 1px solid white;
+  border-radius: 40px;
+  width: 50%;
+  text-align: center;
+  transition: .7s;
+}
+#app-development .item .button a:hover{
+  background-color: black;
+  border: 1px solid black;
+}
+#app-development .app-item .item{
+  border: 1px solid black;
+  height: 0vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.6), rgb(236, 23, 48));
+  position: absolute;
+  bottom: 0px;
+  transition: .7s;
+  overflow: hidden;
+  border-radius: 10px;
+}
+#app-development .app-item:hover .item{
+  height: 100%;
+}

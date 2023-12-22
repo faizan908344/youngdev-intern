@@ -1,0 +1,391 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- Font Awesome Icon Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Latest compiled and minified CSS -->
+  <!-- Jquery CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Javascript Link -->
+  <script src="js/app.js"></script>
+
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!-- Homepage Section -->
+  <section id="homepage">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 nav-logo">
+          <div class="heading">
+            <a href="index.html">Portfolio</a>
+          </div>
+        </div>
+        <div class="col-md-9 nav-links">
+          <div class="links">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+              <li><a href="#project">PROJECTS</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 links-content">
+          <div class="content">
+            <div class="sub-heading">
+              <h3>Hey, There</h3>
+            </div>
+            <div class="heading">
+              <h2>I'M MUHAMMAD FAIZAN</h2>
+            </div>
+            <div class="sub-heading">
+              <h3>A WEB DEVELOPER</h3>
+            </div>
+            <div class="desc">
+              <p>A front-end web/apps developer focus on the user
+                convinence and also able to do designing of
+                different things like website mockups, logos etc ...</p>
+            </div>
+            <div class="button">
+              <a href="https://drive.google.com/file/d/1nJaGgiMo31ft85l7U_6K3ELUkhFgd7-R/view?usp=sharing">DOWNLOAD CV</a>
+            </div>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100040240338164"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-whatsapp"></i></a>
+              <a href="https://www.linkedin.com/in/faizan568/"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/faizan908344"><i class="fa fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 profile-img">
+          <img src="img/my-pic.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about-us">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 about-head">
+          <div class="heading">
+            <h2 id="about">ABOUT <span>ME</span></h2>
+          </div>
+        </div>
+        <div class="col-md-5 picture">
+          <div class="profile">
+            <div class="image"></div>
+          </div>
+        </div>
+        <div class="col-md-7 about-info">
+          <div class="my-info">
+            <div class="tab-bar">
+              <ul>
+                  <li id="defaultOpen" onclick="openPage('edu', this, '#1200b200')">EDUCATIONS</li>
+                  <li onclick="openPage('exp', this, '#1200b200')">EXPERIENCE</li>
+                  <li onclick="openPage('skill', this, '#1200b200')">MY SKILLS</li>
+                  <li onclick="openPage('lang', this, '#1200b200')">LANGUAGES</li>
+              </ul>
+            </div>
+
+            <div id="edu" class="tabcontent">
+              <div class="graduation">
+                <div class="institute-name">
+                  <h2>FUUAST, Karachi</h2>
+                </div>
+                <div class="duration">
+                  <p>FEB 2020 - PRESENT</p>
+                </div>
+                <div class="degree-name">
+                  <p>BS Computer Science</p>
+                </div>
+                <div class="grade">
+                  <p>Current CGPA: 3.76</p>
+                </div>
+              </div>
+              <div class="horizontal-line"><hr></div>
+              <div class="graduation">
+                <div class="institute-name">
+                  <h2>GOVT. NATIONAL COLLEGE, Karachi</h2>
+                </div>
+                <div class="duration">
+                  <p>AUG 2017 - AUG 2019</p>
+                </div>
+                <div class="degree-name">
+                  <p>Pre Engineering</p>
+                </div>
+                <div class="grade">
+                  <p>Grade: C</p>
+                </div>
+              </div>
+              <div class="horizontal-line"><hr></div>
+              <div class="graduation">
+                <div class="institute-name">
+                  <h2>THE EDUCATORS SCHOOL, Karachi</h2>
+                </div>
+                <div class="duration">
+                  <p>MAR 2004 - APR 2015</p>
+                </div>
+                <div class="degree-name">
+                  <p>Computer Science</p>
+                </div>
+                <div class="grade">
+                  <p>Grade: A</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="exp" class="tabcontent">
+              <div class="my-experience">
+                <div class="institute-name">
+                  <h2>TEKVERSE DIGITAL</h2>
+                </div>
+                <div class="position">
+                  <p>Front-End Developer</p>
+                </div>
+                <div class="duration">
+                  <p>MAY 2023 - AUG 2023</p>
+                </div>
+              </div>
+              <div class="horizontal-line"><hr></div>
+              <div class="my-experience">
+                <div class="institute-name">
+                  <h2>GROW INTERN</h2>
+                </div>
+                <div class="position">
+                  <p>Full Stack Web Developer</p>
+                </div>
+                <div class="duration">
+                  <p>NOV 2023 - DEC 2023</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="skill" class="tabcontent">
+              <div class="my-skills">
+                <div class="skillname">
+                  <p>Flutter Development</p>
+                </div>
+                <div class="skillprogress">
+                  <div class="progressbar flutter"></div>
+                </div>
+              </div>
+              <div class="my-skills">
+                <div class="skillname">
+                  <p>UI/UX Designing</p>
+                </div>
+                <div class="skillprogress">
+                  <div class="progressbar ui-design"></div>
+                </div>
+              </div>
+              <div class="my-skills">
+                <div class="skillname">
+                  <p>Back-End Development</p>
+                </div>
+                <div class="skillprogress">
+                  <div class="progressbar backend"></div>
+                </div>
+              </div>
+              <div class="my-skills">
+                <div class="skillname">
+                  <p>Front-End Development</p>
+                </div>
+                <div class="skillprogress">
+                  <div class="progressbar frontend"></div>
+                </div>
+              </div>
+              <div class="my-skills">
+                <div class="skillname">
+                  <p>Graphic Designing</p>
+                </div>
+                <div class="skillprogress">
+                  <div class="progressbar graphic"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="lang" class="tabcontent">
+              <div class="my-lang">
+                <div class="langname">
+                  <p>Flutter/DART</p>
+                </div>
+                <div class="langprogress">
+                  <div class="dart"></div>
+                </div>
+              </div>
+              <div class="my-lang">
+                <div class="langname">
+                  <p>Hyper Text Markup Language (HTML)</p>
+                </div>
+                <div class="langprogress">
+                  <div class="html"></div>
+                </div>
+              </div>
+              <div class="my-lang">
+                <div class="langname">
+                  <p>Cascading Style Sheet (CSS)</p>
+                </div>
+                <div class="langprogress">
+                  <div class="css"></div>
+                </div>
+              </div>
+              <div class="my-lang">
+                <div class="langname">
+                  <p>Bootstrap</p>
+                </div>
+                <div class="langprogress">
+                  <div class="bootstrap"></div>
+                </div>
+              </div>
+              <div class="my-lang">
+                <div class="langname">
+                  <p>Javascript</p>
+                </div>
+                <div class="langprogress">
+                  <div class="js"></div>
+                </div>
+              </div>
+              <div class="my-lang">
+                <div class="langname">
+                  <p>Python Programming</p>
+                </div>
+                <div class="langprogress">
+                  <div class="python"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Form -->
+  <section id="contact-form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 contact-head">
+          <div class="heading">
+            <h2 id="contact">CONTACT <span>US</span></h2>
+          </div>
+        </div>
+      
+        <div class="col-md-8 contact-form">
+          <form>
+            <input type="text" placeholder="Your First Name">
+          </form>
+          <form>
+            <input type="text" placeholder="Your Last Name">
+          </form>
+          <form>
+            <input type="text" placeholder="Your Email Address">
+          </form>
+          <form>
+            <textarea cols="30" rows="5" placeholder="Your Message"></textarea>
+          </form>
+          <div class="button">
+            <a href="#">SUBMIT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="my-projects">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 project-head">
+          <div class="heading">
+            <h2 id="project">MY <span>PROJECTS</span></h2>
+          </div>
+        </div>
+        <div class="col-md-3 my-services web-dev">
+          <div class="services">
+            <div class="heading">
+              <h2>Web Development</h2>
+            </div>
+            <div class="desc">
+              <p>Web development services entail the coding and programming required to build functional and interactive
+                websites, ensuring seamless user experiences, efficient functionality, and robust online solutions.</p>
+            </div>
+            <div class="button">
+              <a href="webdev.html">View All</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-services app-dev">
+          <div class="services">
+            <div class="heading">
+              <h2>App Development</h2>
+            </div>
+            <div class="desc">
+              <p>App Development services involve crafting visually appealing and user-friendly website layouts,
+                graphics, and interfaces to boost online presence, reinforce brand identity, and improve overall user
+                experience.</p>
+            </div>
+            <div class="button">
+              <a href="appdev.html">View All</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 my-services graphic">
+          <div class="services">
+            <div class="heading">
+              <h2>Graphic Designing</h2>
+            </div>
+            <div class="desc">
+              <p>Web development services entail the coding and programming required to build functional and interactive
+                websites, ensuring seamless user experiences, efficient functionality, and robust online solutions.</p>
+            </div>
+            <div class="button">
+              <a href="graphic.html">View All</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 copy-restrict">
+          <p>&copy; Copyright Reserved 2023 by Faizan. </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- Bootstrap CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

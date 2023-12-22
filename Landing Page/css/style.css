@@ -1,0 +1,873 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* My CSS Styling Start from here */
+
+/* Navigation Bar and Banner Section */
+#nav-banner{
+  /* height: 90vh; */
+  background: url("../img/banner-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 30px 0px;
+}
+#nav-banner .navigation{
+  margin: 0px;
+}
+#nav-banner .navigation .row{
+  display: flex;
+  align-items: center;
+}
+#nav-banner .navigation .logo-pic .row{
+  display: flex;
+  align-items: center;
+}
+#nav-banner .navigation .logo-pic .pic{
+  padding: 0px;
+  display: flex;
+  justify-content: end;
+}
+#nav-banner .navigation .logo-pic .pic img{
+  width: 70%;
+}
+#nav-banner .navigation .logo-pic .name a{
+  margin: 0px;
+  font-size: 37px;
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  color: #3d2514;
+  text-decoration: none;
+}
+#nav-banner .navigation .nav-links .top-nav{
+  margin: 0px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 12px 0px;
+}
+#nav-banner .navigation .nav-links .top-nav .text p{
+  margin: 0px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #3d2514;
+  font-family: "Montserrat";
+  padding: 0px 4px;
+}
+#nav-banner .navigation .nav-links .links{
+  display: flex;
+  justify-content: end;
+  padding: 0px;
+}
+#nav-banner .navigation .nav-links .links ul{
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+#nav-banner .navigation .nav-links .links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 0px;
+}
+#nav-banner .navigation .nav-links .links ul li a{
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  color: #3d2514;
+  padding: 10px 5px;
+}
+#nav-banner .banner-text{
+  margin: 0px;
+}
+#nav-banner .banner-text .text{
+  padding: 40px 0px;
+}
+#nav-banner .banner-text .text .slogan{
+  margin: 15px 0px;
+}
+#nav-banner .banner-text .text .slogan p{
+  border: 2px dashed #3d2514;
+  display: inline-block;
+  margin: 0px !important;
+  padding: 3px 7px;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Bebas Neue";
+  color: #3d2514;
+}
+#nav-banner .banner-text .text .heading h2{
+  margin: 0px;
+  font-size: 114px;
+  font-family: "Alfa Slab One";
+  font-weight: 400;
+  color: #3d2514;
+  line-height: none;
+}
+#nav-banner .banner-text .text .heading span{
+  font-size: 60px;
+  margin: 0px;
+  font-family: "Alfa Slab One";
+  font-weight: 400;
+  color: #3d2514;
+  line-height: none;
+}
+#nav-banner .banner-pic{
+  height: 70vh;
+}
+#nav-banner .banner-pic .image{
+  margin-top: 30px;
+  padding: 20px 0px;
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+#nav-banner .banner-pic .image::before{
+  position: absolute;
+  content: "";
+  background: url("../img/banner-glow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  bottom: 150px;
+  left: 34;
+}
+#nav-banner .banner-pic .image img{
+  width: 90%;
+}
+#nav-banner .banner-pic .discount-offer{
+  border: 1px solid #bf2222;
+  background-color: #bf2222;
+  padding: 10px;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  position: absolute;
+  top: 330px;
+  left: 60px;
+}
+#nav-banner .banner-pic .discount-offer .ellipse{
+  border: 1px dashed white;
+  width: 137px;
+  height: 137px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#nav-banner .banner-pic .discount-offer .ellipse .heading h3{
+  font-size: 65px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  color: white;
+  margin: 0px;
+}
+#nav-banner .banner-pic .discount-offer .ellipse .heading h3 span{
+  font-size: 25px;
+}
+#nav-banner .banner-pic .discount-offer .ellipse .desc p{
+  font-size: 30px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  color: white;
+  margin: 0px;
+  letter-spacing: 7px;
+}
+
+/* Popular Categories Items Section */
+#popular-categories{
+  /* border: 1px solid black; */
+  padding: 50px 0px;
+}
+#popular-categories .popular-cat1 .new-items1 .item1{
+  border: 1px solid white;
+  height: 55vh;
+  background: url("../img/burger-category-one.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: 7px;
+  padding: 15px;
+}
+/* #popular-categories .popular-cat1 .new-items1 .item1 .sub-heading,
+#popular-categories .popular-cat1 .new-items1 .item1 .heading{
+  margin-bottom: 10px;
+  border: 1px solid black;
+} */
+#popular-categories .popular-cat1 .new-items1 .item1 .sub-heading h3{
+  font-size: 35px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  color: white;
+  margin: 0px;
+}
+#popular-categories .popular-cat1 .new-items1 .item1 .heading h2{
+  margin: 0px;
+  font-size: 45px;
+  font-family: "Bebas Neue";
+  font-weight: 500;
+  color: white;
+  margin: 0px;
+}
+#popular-categories .popular-cat2 .new-items2 .item1{
+  height: 26vh;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: url("../img/burger-category-two.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+#popular-categories .popular-cat2 .new-items2 .item1 .sub-heading h3{
+  font-size: 30px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  color: white;
+  margin: 0px;
+  padding: 3px 0px;
+}
+#popular-categories .popular-cat2 .new-items2 .item1 .heading h2{
+  margin: 0px;
+  font-size: 45px;
+  font-family: "Bebas Neue";
+  font-weight: 500;
+  color: white;
+  margin: 0px;
+  max-width: 40%;
+}
+#popular-categories .popular-cat2 .new-items2 .item2{
+  border: 1px solid black;
+  height: 27vh;
+  padding: 10px;
+  background: url("../img/burger-category-three.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+#popular-categories .popular-cat2 .new-items2 .item2 .sub-heading h3{
+  font-size: 30px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  color: white;
+  margin: 0px;
+  padding: 3px 0px;
+}
+#popular-categories .popular-cat2 .new-items2 .item2 .heading h2{
+  margin: 0px;
+  font-size: 45px;
+  font-family: "Bebas Neue";
+  font-weight: 500;
+  color: white;
+  margin: 0px;
+}
+
+#popular-categories .button{
+  margin: 50px 0px 35px 0px;
+}
+#popular-categories .button .btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#popular-categories .button .btn a{
+  border: 1px solid #ffc045;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  color: #3d2514;
+  background-color: #ffc045;
+  padding: 10px 30px;
+  margin: 0px;
+  transition: .7s;
+}
+#popular-categories .button .btn a:hover{
+  border: 1px solid #3d2514;
+  background-color: transparent;
+}
+#popular-categories .heading-text .heading h2{
+  text-align: center;
+  font-size: 50px;
+  font-family: "Alfa Slab One";
+  font-weight: 700;
+  color: #3d2514;
+}
+#popular-categories .heading-text .text p{
+  font-size: 17px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #3d2514;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* Burger Items Section */
+#different-burger{
+  padding: 40px 0px;
+}
+#different-burger .burger-item .item .image img{
+  width: 100%;
+  padding: 15px;
+}
+#different-burger .product .item .image img{
+  width: 93%;
+  display: flex;
+  margin: auto;
+  padding: 20px;
+}
+#different-burger .burger-item .item .heading h2{
+  margin: 0px;
+  text-align: center;
+  font-size: 38px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  color: #3d2514;
+  padding: 7px 0px;
+}
+#different-burger .burger-item .item .desc p{
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+  font-size: 17px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #3d2514;
+}
+#different-burger .burger-item .item .button{
+  margin-top: 40px;
+}
+#different-burger .burger-item .item .button a{
+  border: 1px solid #bf2222;
+  background-color: #bf2222;
+  display: flex;
+  max-width: 50%;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 12px 0px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Alfa Slab One";
+  font-weight: 400;
+  color: white;
+  transition: .7s;
+}
+#different-burger .burger-item .item .button a:hover{
+  background-color: white;
+  color: #bf2222;
+}
+
+/* Product Sliders Section*/
+#product-slider{
+  margin: 30px 0px;
+}
+#product-slider .slider{
+  box-shadow: 10px 10px 17px 0px rgba(0, 0, 0, 0.434);
+}
+#product-slider .slider .slider-content .content{
+  padding: 25px;
+}
+#product-slider .slider .slider-content .content .sub-heading h3{
+  margin: 0px;
+  font-size: 29px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  color: #3d2514;
+}
+#product-slider .slider .slider-content .content .heading h2{
+  margin: 0px;
+  font-size: 42px;
+  font-family: "Alfa Slab One";
+  font-weight: 400;
+  color: #3d2514;
+}
+#product-slider .slider .slider-content .content .desc{
+  margin-top: 40px;
+}
+#product-slider .slider .slider-content .content .desc p{
+  margin: 0px;
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #3d2514;
+}
+#product-slider .slider .slider-image{
+  padding: 15px;
+}
+#product-slider .slider .slider-image img{
+  width: 100%;
+}
+
+/* Reservation Section */
+#reservation{
+  margin: 20px 0px;
+  padding: 50px;
+}
+#reservation .row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#reservation .res-head-subhead::before{
+  position: absolute;
+  content: "";
+  width: 20%;
+  background: url("../img/contact-burger.png");
+  background-position: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: -40px;
+  right: -173px;
+  height: 30vh;
+}
+#reservation .res-head-subhead::after{
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 40vh;
+  background: url("../img/contact-burger-plate.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  /* right: -250px; */
+  left: -200px;
+  top: 260px;
+}
+#reservation .res-head-subhead{
+  margin-bottom: 60px;
+  position: relative;
+}
+
+#reservation .res-head-subhead .sub-heading h3{
+  margin: 0px;
+  font-size: 29px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  color: #3d2514;
+  letter-spacing: 7px;
+  text-align: center;
+  padding: 5px 0px;
+}
+#reservation .res-head-subhead .heading h2{
+  margin: 0px;
+  font-size: 50px;
+  font-family: "Alfa Slab One";
+  font-weight: 400;
+  color: #3d2514;
+  text-align: center;
+  padding: 5px 0px;
+  letter-spacing: 3px;
+}
+#reservation .res-info{
+  position: relative;
+}
+#reservation .res-info form{
+  margin: 15px 0px;
+}
+#reservation .res-info form input{
+  border: 1px solid rgb(172, 172, 172);
+  font-size: 23px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  color: #3d2514;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+#reservation .res-info .button{
+  margin-bottom: 15px;
+}
+#reservation .res-info .button a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid red;
+  border-radius: 5px;
+  font-size: 22px;
+  font-family: "Alfa Slab One";
+  font-weight: 400;
+  color: white;
+  background-color: #bf2222;
+  padding: 16px 0px;
+}
+
+/* Footer Banner Section */
+#footer-banner{
+  margin: 100px 0px 20px 0px;
+}
+#footer-banner .footer{
+  border: 1px solid black;
+  background: url("../img/footer-img.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  /* height: 60vh; */
+  padding: 20px 0px;
+}
+#footer-banner .footer .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#footer-banner .footer .logo-name{
+  display: flex;
+  margin-top: 80px;
+  padding: 0px 50px;
+}
+#footer-banner .footer .logo-name .logo .image{
+  display: inline-block;
+}
+#footer-banner .footer .logo-name .logo .image img{
+  width: 90px;
+  padding: 10px;
+}
+#footer-banner .footer .logo-name .name{
+  display: flex;
+  margin: auto 0px;
+}
+#footer-banner .footer .logo-name .name .heading h2{
+  margin: 0px;
+  font-size: 45px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  color: white;
+  padding: 5px 10px;
+}
+#footer-banner .footer .footer-text{
+  margin-top: 25px;
+}
+#footer-banner .footer .footer-text .text p{
+  font-size: 17px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  max-width: 80%;
+  color: white;
+  margin: 0px 30px;
+  padding: 5px 10px;
+}
+#footer-banner .footer .footer-info .info .address .fa-location-arrow,
+#footer-banner .footer .footer-info .info .email .fa-envelope{
+  color: white;
+  font-size: 25px;
+  padding-right: 20px;
+}
+#footer-banner .footer .footer-info .info .address p,
+#footer-banner .footer .footer-info .info .email p{
+  margin: 0px;
+  font-size: 20px;
+  color: white;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  padding: 5px 20px;
+}
+#footer-banner .footer .footer-copyright{
+  margin-top: 100px;
+}
+#footer-banner .footer .footer-copyright .copyright p{
+  margin: 0px 20px;
+  color: white;
+  padding: 10px 10px;
+  font-size: 18px;
+  font-family: "Bebas Neue";
+  font-weight: 400;
+}
+#footer-banner .footer .footer-social-icons{
+  margin-top: 100px;
+}
+#footer-banner .footer .footer-social-icons .social-icon{
+  display: flex;
+  justify-content: end;
+  padding: 5px;
+  margin: 0px 35px;
+}
+#footer-banner .footer .footer-social-icons .social-icon .fa-instagram{
+  font-size: 25px;
+  color: black;
+  padding: 6px 8px;
+  margin: 0px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin: 0px 5px;
+  background-color: white;
+}
+#footer-banner .footer .footer-social-icons .social-icon .fa-facebook{
+  font-size: 25px;
+  color: black;
+  padding: 6px 11px;
+  margin: 0px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin: 0px 5px;
+  background-color: white;
+}
+#footer-banner .footer .footer-social-icons .social-icon .fa-twitter{
+  font-size: 25px;
+  color: black;
+  padding: 6px 8px;
+  margin: 0px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin: 0px 5px;
+  background-color: white;
+}
+#footer-banner .footer .footer-social-icons .social-icon .fa-whatsapp{
+  font-size: 25px;
+  color: black;
+  padding: 6px 8px;
+  margin: 0px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin: 0px 5px;
+  background-color: white;
+}
